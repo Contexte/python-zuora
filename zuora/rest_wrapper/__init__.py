@@ -4,3 +4,4 @@ from payment_method_manager import PaymentMethodManager
 from subscription_manager import SubscriptionManager
 from transaction_manager import TransactionManager
 from usage_manager import UsageManager
+from hosted_pages_manager import HostedPagesManager

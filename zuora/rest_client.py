@@ -1,7 +1,7 @@
 import requests
 from rest_wrapper import (AccountManager, CatalogManager, PaymentMethodManager,
                           SubscriptionManager, TransactionManager,
-                          UsageManager)
+                          UsageManager, HostedPagesManager)
 
 ## This file contains some parameters that will need to be changed to work in different tenants:
 ## REQUIRED PARAMS:
@@ -41,4 +41,5 @@ class RestClient(object):
         self.subscription = SubscriptionManager(self.zuora_config)
         self.transaction = TransactionManager(self.zuora_config)
         self.usage = UsageManager(self.zuora_config)
+        self.hosted_pages = HostedPagesManager(self.zuora_config)
 
