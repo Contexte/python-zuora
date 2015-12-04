@@ -841,6 +841,7 @@
 							<element minOccurs="0" name="AmendmentType" nillable="true" type="string" />
                				<element minOccurs="0" name="CreatedById" nillable="true" type="zns:ID"  />
                				<element minOccurs="0" name="CreatedDate" nillable="true" type="dateTime"  />
+               				<element minOccurs="0" name="Description__c" nillable="true" type="string" />
 							<element minOccurs="0" name="Name" nillable="true" type="string" /><!-- do we need this? -->
 							<element minOccurs="0" name="ProductRatePlanId" nillable="true" type="zns:ID" />
 							<element minOccurs="0" name="SubscriptionId" nillable="true" type="zns:ID" />
@@ -884,7 +885,6 @@
 			               	<element minOccurs="0" name="CreatedById" nillable="true" type="zns:ID"  />
 			               	<element minOccurs="0" name="CreatedDate" nillable="true" type="dateTime"  />
 							<element minOccurs="0" name="Description" nillable="true" type="string" />
-			               	<element minOccurs="0" name="Description__c" nillable="true" type="string" />
 							<element minOccurs="0" name="DiscountAmount" nillable="true" type="decimal" />
 							<element minOccurs="0" name="DiscountLevel" nillable="true" type="string" />
 							<element minOccurs="0" name="DiscountPercentage" nillable="true" type="decimal" />
