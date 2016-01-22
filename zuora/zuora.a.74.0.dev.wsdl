@@ -105,7 +105,6 @@
                				<element minOccurs="0" name="TotalInvoiceBalance" nillable="true" type="decimal"  />
                				<element minOccurs="0" name="UpdatedById" nillable="true" type="zns:ID"  />
                				<element minOccurs="0" name="UpdatedDate" nillable="true" type="dateTime" />
-               				<element minOccurs="0" name="VAT_EU_ID__c" nillable="true" type="string" />
                				<element minOccurs="0" name="VATId" nillable="true" type="string"  />
 						</sequence>
 					</extension>
@@ -691,6 +690,7 @@
 							<element minOccurs="0" name="Name" nillable="true" type="string" />
 			               	<element minOccurs="0" name="NameEN__c" nillable="false" type="string" />
 							<element minOccurs="0" name="SKU" nillable="true" type="string" />
+			               	<element minOccurs="0" name="Test__c" nillable="true" type="string" />
 			               	<element minOccurs="0" name="UpdatedById" nillable="true" type="zns:ID"  />
 			               	<element minOccurs="0" name="UpdatedDate" nillable="true" type="dateTime"  />
 						</sequence>
@@ -845,6 +845,7 @@
 							<element minOccurs="0" name="AmendmentType" nillable="true" type="string" />
                				<element minOccurs="0" name="CreatedById" nillable="true" type="zns:ID"  />
                				<element minOccurs="0" name="CreatedDate" nillable="true" type="dateTime"  />
+               				<element minOccurs="0" name="Description__c" nillable="true" type="string" />
 							<element minOccurs="0" name="Name" nillable="true" type="string" /><!-- do we need this? -->
 							<element minOccurs="0" name="ProductRatePlanId" nillable="true" type="zns:ID" />
 							<element minOccurs="0" name="SubscriptionId" nillable="true" type="zns:ID" />
@@ -863,12 +864,8 @@
 		              <element minOccurs="0" name="Description" nillable="true" type="string" />
 		              <element minOccurs="0" name="FeatureCode" nillable="true" type="string" />
 		              <element minOccurs="0" name="FeatureId" nillable="false" type="zns:ID" />
-		              <element minOccurs="0" name="Geography__c" nillable="false" type="string" />
-		              <element minOccurs="0" name="Language__c" nillable="false" type="string" />
 		              <element minOccurs="0" name="Name" nillable="true" type="string" />
 		              <element minOccurs="0" name="RatePlanId" nillable="true" type="zns:ID" />
-		              <element minOccurs="0" name="Target__c" nillable="false" type="string" />
-		              <element minOccurs="0" name="Type__c" nillable="false" type="string" />
 		              <element minOccurs="0" name="UpdatedById" nillable="true" type="zns:ID"  />
 		              <element minOccurs="0" name="UpdatedDate" nillable="true" type="dateTime"  />
 		            </sequence>
@@ -2087,7 +2084,7 @@
 	</binding>
 	<service name="ZuoraService">
 		<port name="Soap" binding="zns:SoapBinding">
-			<soap:address location="https://www.zuora.com/apps/services/a/74.0" />
+			<soap:address location="https://apisandbox.zuora.com/apps/services/a/74.0" />
 		</port>
 	</service>
 </definitions>
